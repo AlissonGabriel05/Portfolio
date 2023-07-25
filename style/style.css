@@ -255,6 +255,38 @@ ul{
     left: 56px;
     animation-delay: 0;
   }
+  footer{
+    background-color: #0D1B2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-5);
+    flex-direction: column;
+  }
+  .social-footer img{
+    width: 20px;
+    padding: 10px;
+    background-color: var(--color-5);
+    border-radius: 50px;
+    margin: 10px;
+}
+.social-footer img:hover{
+    background-color: var(--color-4);
+    transition: 0.6s;
+    transform: scale(1.05);
+}
+  .social-footer{
+    margin-top: 3rem;
+  }
+  .details-footer{
+    justify-content: center;
+    display: inline;
+    margin-bottom: 3rem;
+  }
+  #p-details{
+    display: flex;
+    justify-content: center;
+  }
   @keyframes lds-facebook {
     0% {
       top: 8px;
@@ -307,13 +339,11 @@ ul{
         margin-top: 2rem; 
         width: 100%;
         font-size: 15px;
+        text-align: center;
     }
     .sobre-description h1{
         justify-content: center;
         display: flex;
-    }
-    .left-sbr{
-        
     }
     .right-sbr{
        display: block;
