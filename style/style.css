@@ -13,19 +13,6 @@ a{
     --color-4: #778DA9;
     --color-5: #E0E1DD;
 }
-::-webkit-scrollbar{
-    background-color: var(--color-5);
-}
-
-::-webkit-scrollbar-button{
-    background-color: var(--color-5);
-}
-::-webkit-scrollbar-thumb{
-    background-color: var(--color-3);
-}
-::-webkit-scrollbar-track{
-    background-color: var(--color-1);
-}
 body{
     background-color: var(--color-2);
     font-family: 'Roboto';
@@ -150,7 +137,7 @@ ul{
     display: flex;
     align-items: center;
     background-color: var(--color-1);
-
+   
 }
 .left-sbr{
     width: 50%;
@@ -171,10 +158,16 @@ ul{
 }
 .sobre-description h1{
     color: var(--color-3);
+    display: flex;
+    justify-content: center;
 }
 .sobre-description p{
     color: var(--color-5);
     font-size: 1.2em;
+}
+.img-sbr{
+    display: flex;
+    justify-content: center;
 }
 .img-sbr img{
     background-color: var(--color-4);
@@ -190,6 +183,8 @@ ul{
     font-size: 15px;
     margin: 2rem;
     color: var(--color-3);
+    display: flex;
+    justify-content: center;
 } 
 .card-project{
     width: 20vw;
@@ -300,6 +295,12 @@ ul{
     }
     .img-sbr img{
         margin-left: 0rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sobre{
+        flex-direction: column-reverse;
     }
     .sobre-description{
         padding: 10px;
@@ -311,17 +312,11 @@ ul{
         justify-content: center;
         display: flex;
     }
-    .sobre{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        width: 100%;
-    }
     .left-sbr{
-        width: 100vw;
+        
     }
     .right-sbr{
-        width: 100vw;
+       display: block;
     }
      
 .card-project{
@@ -329,9 +324,17 @@ ul{
     background-color: var(--color-1);
     border-radius: 15px;
 }
-
+.project {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .prj{
     display: inline;
+    justify-content: center;
+}
+.title-project{
+    display: flex;
     justify-content: center;
 }
 }
