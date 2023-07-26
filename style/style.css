@@ -182,7 +182,7 @@ ul{
 .title-project{
     font-size: 15px;
     margin: 2rem;
-    color: var(--color-3);
+    color: var(--color-5);
     display: flex;
     justify-content: center;
 } 
@@ -213,6 +213,7 @@ ul{
     justify-content: center;
     align-items: center;
     padding: 9%;
+    text-align: center;
 }
 .tech-prj{
     display: flex;
@@ -286,6 +287,28 @@ ul{
   #p-details{
     display: flex;
     justify-content: center;
+  }
+  .vw-rp button img{
+    width: 40px;
+  }
+  .vw-rp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.vw-rp button{
+    border: 0;
+    background-color: var(--color-5);
+    padding: 8px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 3px 1px var(--color-5);
+    margin: 1rem;
+  }
+  .vw-rp button:hover{
+    background-color: var(--color-4);
+    transition: 0.6s;
+    transform: scale(1.05);
   }
   @keyframes lds-facebook {
     0% {
@@ -374,5 +397,15 @@ ul{
         padding: 20px;
         width: 100%;
         font-size: 15px;
+    }
+    .card-project{
+        width: 30vw;
+        background-color: var(--color-1);
+        border-radius: 15px;
+        margin-bottom: 2rem;
+    }
+
+    .right img{
+        width: 75%;
     }
 }
